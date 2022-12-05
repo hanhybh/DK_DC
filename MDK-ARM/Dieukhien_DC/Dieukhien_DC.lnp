@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"dieukhien_dc\startup_stm32f103xb.o"
+"dieukhien_dc\main.o"
+"dieukhien_dc\stm32f1xx_it.o"
+"dieukhien_dc\stm32f1xx_hal_msp.o"
+"dieukhien_dc\stm32f1xx_hal_gpio_ex.o"
+"dieukhien_dc\stm32f1xx_hal_adc.o"
+"dieukhien_dc\stm32f1xx_hal_adc_ex.o"
+"dieukhien_dc\stm32f1xx_hal.o"
+"dieukhien_dc\stm32f1xx_hal_rcc.o"
+"dieukhien_dc\stm32f1xx_hal_rcc_ex.o"
+"dieukhien_dc\stm32f1xx_hal_gpio.o"
+"dieukhien_dc\stm32f1xx_hal_dma.o"
+"dieukhien_dc\stm32f1xx_hal_cortex.o"
+"dieukhien_dc\stm32f1xx_hal_pwr.o"
+"dieukhien_dc\stm32f1xx_hal_flash.o"
+"dieukhien_dc\stm32f1xx_hal_flash_ex.o"
+"dieukhien_dc\stm32f1xx_hal_exti.o"
+"dieukhien_dc\stm32f1xx_hal_tim.o"
+"dieukhien_dc\stm32f1xx_hal_tim_ex.o"
+"dieukhien_dc\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Dieukhien_DC\Dieukhien_DC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Dieukhien_DC.map" -o Dieukhien_DC\Dieukhien_DC.axf
